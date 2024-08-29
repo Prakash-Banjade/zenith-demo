@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export const HeaderLogo = () => {
-  return (
-    <div className='text-4xl text-primary font-semibold'>Zenith</div>
-  )
-}
+  return <div className="text-4xl text-white font-semibold">Zenith</div>;
+};
