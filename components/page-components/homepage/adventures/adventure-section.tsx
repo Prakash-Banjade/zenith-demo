@@ -2,7 +2,6 @@ import React from "react";
 import { adventureLists } from "./data";
 import Link from "next/link";
 import Image from "next/image";
-import { IoIosArrowRoundForward } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 
@@ -21,37 +20,9 @@ export const AdventureSection = () => {
           </p>
         </div>
 
-        <div className="flex gap-6">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-4">
           {adventureLists.map((item) => (
-            <div
-              key={item.title}
-              className=" bg-white rounded-3xl relative h-[320px] basis-1/4 overflow-hidden group"
-            >
-              <Image
-                src={item.image}
-                alt="Single Car"
-                height={600}
-                width={600}
-                className=" h-full w-full object-cover absolute inset-0 group-hover:scale-125 zen__transition__300"
-              />
-              <div className="absolute inset-0 h-full w-full group-hover:bg-black/30 zen__transition__500"></div>
-
-              <div className="absolute inset-0 h-full w-full  bg-gradient-to-t from-black via-black/40 to-black/20"></div>
-              <div className="absolute p-4 bottom-0 translate-y-[68%]  group-hover:translate-y-0 zen__transition__500">
-                <div className="flex flex-col gap-4 text-white">
-                  <h3 className="text-xl font-bold">{item.title}</h3>
-                  <p className="">{item.description}</p>
-                  <Link
-                    href={item.path}
-                    className="text-secondary zen__transition__300 hover:text-white gap-1 flex items-center font-semibold animate__icon"
-                  >
-                    <span>View More</span>
-
-                    <FaArrowRight className=" zen__transition__300 icon" />
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <Item key={item.title} item={item} />
           ))}
         </div>
 
@@ -65,5 +36,43 @@ export const AdventureSection = () => {
         </div>
       </div>
     </section>
+  );
+};
+
+type TItem = {
+  item: (typeof adventureLists)[number];
+};
+
+const Item = ({ item }: TItem) => {
+  return (
+    <div
+      key={item.title}
+      className=" bg-white rounded-3xl relative h-[320px] overflow-hidden group"
+    >
+      <Image
+        src={item.image}
+        alt="Single Car"
+        height={600}
+        width={600}
+        className=" h-full w-full object-cover absolute inset-0 group-hover:scale-125 zen__transition__300"
+      />
+      <div className="absolute inset-0 h-full w-full group-hover:bg-black/30 zen__transition__500"></div>
+
+      <div className="absolute inset-0 h-full w-full  bg-gradient-to-t from-black via-black/40 to-black/20"></div>
+      <div className="absolute p-4 bottom-0 translate-y-[68%]  group-hover:translate-y-0 zen__transition__500">
+        <div className="flex flex-col gap-4 text-white">
+          <h3 className="text-xl font-bold">{item.title}</h3>
+          <p className="">{item.description}</p>
+          <Link
+            href={item.path}
+            className="text-secondary zen__transition__300 hover:text-white gap-1 flex items-center font-semibold animate__icon"
+          >
+            <span>Book Now</span>
+
+            <FaArrowRight className=" zen__transition__300 icon" />
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 };

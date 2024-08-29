@@ -15,16 +15,9 @@ export const HomeHeroSection = () => {
       />
       <div className="absolute bg-black inset-0 w-full h-full opacity-30"></div>
       <div className="w-full h-full flex items-center justify-center  text-white relative z-50">
-        <div className="container mx-auto space-y-14">
-          <div className="h-fit text-7xl font-semibold">
-            <div className="">Fast and easy way</div>
-            <div className="flex gap-4">
-              to
-              <div className="relative">
-                <span className=""> rent a car</span>
-                {/* <div className="w-full absolute -bottom-2 bg-secondary h-1.5 rounded"></div> */}
-              </div>
-            </div>
+        <div className="container mx-auto 2xl:space-y-14 xl:space-y-10 md:space-y-8 space-y-3">
+          <div className="h-fit 2xl:text-7xl xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-semibold">
+            <h2 className="max-w-[680px]">Fast and easy way to rent a car</h2>
           </div>
 
           <p className="xl:max-w-[40vw] text-lg  shadow-secondary">

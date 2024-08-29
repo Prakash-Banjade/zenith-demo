@@ -6,7 +6,7 @@ export const WaysToBook = () => {
   return (
     <section className="bg-white py-20">
       <div className="container mx-auto space-y-10">
-        <div className="max-w-[50%] mx-auto flex flex-col justify-center items-center gap-6">
+        <div className="lg:max-w-[50%] mx-auto flex flex-col justify-center items-center gap-6">
           <h3 className="text-3xl text-center font-semibold">
             <span className="text-primary">Simple</span> Booking Steps
           </h3>
@@ -17,7 +17,7 @@ export const WaysToBook = () => {
           </p>
         </div>
 
-        <div className=" grid grid-cols-3 gap-x-10 gap-y-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1  lg:gap-x-10 lg:gap-y-4 gap-4">
           {waysToBook.map((item, index) => (
             <Item key={index} {...item} />
           ))}
@@ -36,7 +36,7 @@ type TItem = {
 const Item = ({ icon, title, description }: TItem) => {
   const Icon = icon;
   return (
-    <div className="flex gap-6 p-6 items-start shadow-lg border rounded-xl">
+    <div className="flex gap-6 md:col-span-1 col-span-3 p-6 items-start shadow-lg border rounded-xl">
       <div className="size-16 border-primary border rounded-full flex items-center justify-center">
         <Icon className="text-primary size-6" />
       </div>

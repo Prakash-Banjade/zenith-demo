@@ -7,7 +7,7 @@ export const RentalLocationsSection = () => {
   return (
     <section className="bg-white py-20">
       <div className="container mx-auto space-y-10">
-        <div className="max-w-[50%] mx-auto flex flex-col justify-center items-center gap-6">
+        <div className="lg:max-w-[50%] mx-auto flex flex-col justify-center items-center gap-6">
           <h4 className="text-3xl text-center font-semibold">
             <span className="text-primary">Rental</span> Locations
           </h4>
@@ -17,7 +17,7 @@ export const RentalLocationsSection = () => {
             preference.
           </p>
         </div>
-        <div className="flex  items-center justify-between flex-wrap gap-y-6">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
           {locations.map((item, index) => (
             <Item key={index} {...item} />
           ))}
@@ -36,7 +36,7 @@ type TItem = {
 
 const Item = ({ title, image, totalCars, price }: TItem) => {
   return (
-    <div className="lg:basis-1/4 md:basis-[33%] sm:basis-1/2 basis-full  p-2 relative">
+    <div className="p-2 relative">
       <div className="relative group overflow-hidden">
         <Image
           src={image}

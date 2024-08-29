@@ -13,8 +13,8 @@ import { TiStar } from "react-icons/ti";
 export const CarListSection = () => {
   return (
     <section className="bg-gradient-to-r from-gray-200 to-gray-200 via-slate-100  py-20 ">
-      <div className="max-w-[1020px] mx-auto space-y-10">
-        <div className="max-w-[80%] mx-auto flex flex-col justify-center items-center gap-6">
+      <div className="container mx-auto space-y-10">
+        <div className="lg:max-w-[80%] mx-auto flex flex-col justify-center items-center gap-6">
           <h4 className="text-3xl text-center font-semibold">
             <span className="text-primary">Cars</span> Collection
           </h4>
@@ -25,7 +25,7 @@ export const CarListSection = () => {
           </p>
         </div>
 
-        <div className="flex gap-6">
+        <div className="grid  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-4">
           {carLists.map((item, index) => {
             return (
               <Item
@@ -78,21 +78,9 @@ const Item = ({
   image,
 }: TItem) => {
   return (
-    <div className="hover:bg-white bg-gray-50 delay-75 hover:shadow-lg group border-slate-100 hover:scale-110 zen__transition__300 cursor-pointer shadow-sm border rounded-sm p-8 space-y-6">
-      <div className="flex justify-between">
-        <div className="">
-          <div className="font-semibold  font-makro">
-            AED 375{" "}
-            <span className="text-gray-400 text-sm font-light">/ day</span>
-          </div>
-        </div>
-        <div className="flex gap-0.5 items-center">
-          <TiStar className="text-primary" />
-          <TiStar className="text-primary" />
-          <TiStar className="text-primary" />
-          <TiStar className="text-primary" />
-          <TiStar className="text-primary" />
-        </div>
+    <div className="hover:bg-white basis-1/3  bg-gray-50 delay-75 hover:shadow-lg group border-slate-100 hover:scale-110 zen__transition__300 cursor-pointer shadow-sm border rounded-sm p-8 space-y-6">
+      <div className="font-semibold  font-makro">
+        AED 375 <span className="text-gray-400 text-sm font-light">/ day</span>
       </div>
       <div>
         <Image src={image} alt="Single Car" height={600} width={1000} />

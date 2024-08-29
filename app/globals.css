@@ -84,4 +84,12 @@
   .animate__icon:hover .icon {
     @apply translate-x-1 text-white;
   }
+
+  .slick-slider {
+    margin-inline: -30px;
+  }
 }
+
+/* .slick-initialized .slick-slide {
+  margin-inline: 6px;
+} */

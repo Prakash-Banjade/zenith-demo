@@ -15,7 +15,7 @@ export const HeaderLogo = () => {
         height={150}
         width={350}
         alt="Logo"
-        className="h-12 w-auto transition-all duration-300 ease-linear"
+        className="lg:h-12 h-10 w-auto zen__transition__300"
       />
     </Link>
   );
