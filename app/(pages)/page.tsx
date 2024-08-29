@@ -1,3 +1,4 @@
+import { ServicesSection } from "@/components/common/our-services/services-sections";
 import { RentalLocationsSection } from "@/components/common/rental-locations/rental-locations-sections";
 import { CarListSection } from "@/components/page-components/homepage/car-lists-section/car-lists-section";
 import { HomeHeroSection } from "@/components/page-components/homepage/home-hero/home-hero-section";
@@ -21,6 +22,8 @@ export default function HomePage() {
       <PopularCars />
       <CarListSection />
       {/* Reason To Rent In Our Company */}
+      <ServicesSection />
+
       <ReasonToRentSection />
       {/* Rent Location */}
       <RentalLocationsSection />

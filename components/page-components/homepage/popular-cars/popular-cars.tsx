@@ -13,14 +13,14 @@ export const PopularCars = () => {
   return (
     <section className="py-20 bg-background">
       <div className=" mx-auto relative max-w-[800px]">
-        <h3 className="text-4xl text-center font-semibold mb-6">
-          Most popular cars
+        <h3 className="text-3xl text-center font-semibold mb-6">
+          <span className="text-primary">Most Popular</span> Cars
         </h3>
-        <div className="border-2 border-primary size-14 absolute top-1/2 left-0 flex items-center justify-center rounded-full cursor-pointer hover:bg-slate-500/10 transition-all duration-200 ease-in">
+        <div className="border-2 border-primary hover:border-secondary zen__transition__300 size-14 absolute top-1/2 left-0 flex items-center justify-center rounded-full cursor-pointer hover:bg-slate-500/10 ">
           <IoArrowBack />
         </div>
 
-        <div className="border-2 border-primary size-14 absolute top-1/2 right-0 flex items-center justify-center rounded-full cursor-pointer hover:bg-slate-500/10 transition-all duration-200 ease-in">
+        <div className="border-2 border-primary   hover:border-secondary  size-14 absolute top-1/2 right-0 flex items-center justify-center rounded-full cursor-pointer hover:bg-slate-500/10 zen__transition__300">
           <IoArrowForward />
         </div>
         <div className="w-[560px] relative mx-auto">
@@ -67,7 +67,7 @@ export const PopularCars = () => {
               </div>
               <Button
                 size={"lg"}
-                className="rounded-none hover:bg-secondary font-medium flex items-center gap-2 px-6  shadow-sm shadow-primary hover:shadow-secondary transition-all duration-200 ease-in justify-between"
+                className="rounded-none hover:bg-secondary bg-primary font-medium flex items-center gap-2 px-6  shadow-sm shadow-primary hover:shadow-secondary transition-all duration-200 ease-in justify-between"
               >
                 <span> Rent a Car</span>
 

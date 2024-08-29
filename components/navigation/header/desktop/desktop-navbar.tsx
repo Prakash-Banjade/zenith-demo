@@ -16,7 +16,7 @@ export const DesktopNavbar = () => {
             <Link
               href={item.slug}
               className={cn(
-                "font-medium underline-link  text-white hover:text-primary transition-all duration-200 ease-linear",
+                "font-medium underline-link  text-white hover:text-secondary transition-all duration-200 ease-linear",
                 hasScrolled && "text-gray-600 "
               )}
             >

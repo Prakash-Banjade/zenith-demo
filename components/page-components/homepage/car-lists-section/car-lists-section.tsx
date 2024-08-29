@@ -15,8 +15,10 @@ export const CarListSection = () => {
     <section className="bg-gradient-to-r from-gray-200 to-gray-200 via-slate-100  py-20 ">
       <div className="max-w-[1020px] mx-auto space-y-10">
         <div className="max-w-[80%] mx-auto flex flex-col justify-center items-center gap-6">
-          <h4 className="text-3xl text-center font-semibold">Also Check</h4>
-          <p className="text-center  text-gray-800 text-sm">
+          <h4 className="text-3xl text-center font-semibold">
+            <span className="text-primary">Cars</span> Collection
+          </h4>
+          <p className="text-center  text-muted-foreground text-sm">
             Explore our curated selection of top-quality vehicles. From sleek
             sedans to rugged SUVs, find the perfect car to suit your needs and
             drive away satisfied.
@@ -44,7 +46,7 @@ export const CarListSection = () => {
         <div className="max-w-[80%] mx-auto flex flex-col justify-center items-center gap-6">
           <Button
             variant={"ghost"}
-            className="bg-white hover:scale-105 transition-all duration-300 ease-linear rounded-none text-gray-800 shadow-sm drop-shadow-lg hover:bg-secondary hover:text-white"
+            className="bg-white  transition-all duration-300 ease-linear rounded-none text-gray-800 shadow-sm drop-shadow-lg hover:bg-primary hover:text-white"
           >
             Show all cars
           </Button>
@@ -76,7 +78,7 @@ const Item = ({
   image,
 }: TItem) => {
   return (
-    <div className="hover:bg-white bg-gray-50 delay-75 hover:shadow-lg group border-slate-100 hover:scale-110 transition-all duration-200 ease-linear cursor-pointer shadow-sm border rounded-sm p-8 space-y-6">
+    <div className="hover:bg-white bg-gray-50 delay-75 hover:shadow-lg group border-slate-100 hover:scale-110 zen__transition__300 cursor-pointer shadow-sm border rounded-sm p-8 space-y-6">
       <div className="flex justify-between">
         <div className="">
           <div className="font-semibold  font-makro">
@@ -110,10 +112,10 @@ const Item = ({
         </div>{" "}
         <div className="flex gap-3">
           <BsFillFuelPumpFill className="text-primary" />
-          <span className="font-medium text-gray-400 text-sm">Diesel</span>
+          <span className="font-medium text-gray-400 text-sm">{fuelType}</span>
         </div>
       </div>
-      <div className="w-fit text-primary bg-primary text-white hover:!bg-secondary transition-all duration-300 ease-linear ">
+      <div className="w-fit delay-150 text-sm  text-primary group-hover:bg-primary group-hover:text-white zen__transition__300">
         <Link
           href={path}
           className="font-medium flex  gap-2 items-center px-4 py-2"

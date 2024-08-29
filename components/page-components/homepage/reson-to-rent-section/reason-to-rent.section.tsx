@@ -20,7 +20,7 @@ export const ReasonToRentSection = () => {
           <br />
           <span className="relative">
             <span>our company</span>
-            <span className="w-full block absolute -bottom-4 bg-primary h-1.5 rounded"></span>
+            <span className="w-full block absolute -bottom-4 bg-secondary h-1.5 rounded"></span>
           </span>
         </h3>
 
@@ -44,8 +44,8 @@ const Item = ({ icon, title, description }: TItem) => {
   const Icon = icon;
   return (
     <div className="p-6 space-y-4 group hover:scale-105  hover:bg-orange-500/10 zen__transition__300  cursor-pointer  shadow border-orange-500/50 border rounded-lg">
-      <div className="size-12 group-hover:bg-primary delay-75 zen__transition__300  border border-primary rounded-full flex items-center justify-center">
-        <Icon className="text-primary size-5 text-white zen__transition__300 " />
+      <div className="size-12 group-hover:bg-secondary delay-75 zen__transition__300  border border-secondary rounded-full flex items-center justify-center">
+        <Icon className="text-secondary size-5 text-white zen__transition__300 " />
       </div>
       <div className="flex-1 zen__transition__300 ">
         <h3 className="text-orange-500 text-lg font-semibold mb-2 zen__transition__300 ">
