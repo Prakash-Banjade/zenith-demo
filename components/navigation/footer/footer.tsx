@@ -39,16 +39,7 @@ export const Footer = () => {
         </div>
         <div className="flex justify-between items-center md:flex-row flex-col w-full py-5 border-t">
           <p className="text-sm text-muted-foreground ">
-            Copyright &copy; {currentYear} Zenith - All rights reserved{" "}
-            <span>
-              | Developed by{" "}
-              <Link
-                className="text-secondary hover:text-primary zen__transition"
-                href={"/"}
-              >
-                Tradewise
-              </Link>
-            </span>
+            Copyright &copy; {currentYear} Zenith - All rights reserved
           </p>
           <div className="text-sm ">
             <span className="mr-1 text-muted-foreground">+91</span>

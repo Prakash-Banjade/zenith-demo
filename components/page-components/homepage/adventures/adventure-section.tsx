@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export const AdventureSection = () => {
   return (
-    <section className="bg-[#F7F7F7] py-20">
+    <section className="bg-[#F7F7F7] lg:py-20 py-16">
       <div className="container mx-auto space-y-10">
         <div className="lg:max-w-[60%] mx-auto flex flex-col justify-center items-center gap-6">
           <h4 className="text-3xl text-center font-semibold">

@@ -5,7 +5,7 @@ import { services } from "./data";
 
 export const ServicesSection = () => {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white lg:py-20 py-10">
       <div className="container mx-auto space-y-10">
         <div className="lg:max-w-[50%] mx-auto flex flex-col justify-center items-center gap-6">
           <h4 className="text-3xl text-center font-semibold">

@@ -5,7 +5,7 @@ import { whyUs } from "./data";
 export const ReasonToRentSection = () => {
   return (
     <section
-      className="w-full relative bg-fixed  py-32"
+      className="w-full relative bg-fixed  lg:py-32 md:py-24 py-16"
       style={{
         backgroundImage: `url('/assets/banners/banner-3.jpg')`,
         backgroundSize: "cover",
@@ -15,7 +15,7 @@ export const ReasonToRentSection = () => {
       <div className="absolute w-full h-full inset-0 bg-black/70" />
 
       <div className="container mx-auto relative space-y-14">
-        <h3 className="text-white text-4xl font-semibold tracking-wide">
+        <h3 className="text-white xl:text-4xl text-3xl font-semibold tracking-wide">
           <span>Reason to rent car in</span>
           <br />
           <span className="relative">
