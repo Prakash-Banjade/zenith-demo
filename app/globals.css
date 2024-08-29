@@ -76,4 +76,12 @@
   .zen__transition__200 {
     @apply transition-all duration-200 ease-linear;
   }
+
+  .zen__transition__500 {
+    @apply transition-all duration-500 ease-linear;
+  }
+
+  .animate__icon:hover .icon {
+    @apply translate-x-1 text-white;
+  }
 }
