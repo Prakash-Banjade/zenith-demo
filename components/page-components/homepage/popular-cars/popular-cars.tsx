@@ -24,11 +24,18 @@ export const PopularCars = () => {
     adaptiveHeight: true,
   };
   return (
-    <section className="py-20 bg-background">
-      <div className=" mx-auto relative max-w-[800px]">
-        <h3 className="text-3xl text-center font-semibold mb-6">
-          <span className="text-primary">Most Popular</span> Cars
-        </h3>
+    <section className="lg:py-20 md:py-16 py-10 bg-background overflow-hidden">
+      <div className=" mx-auto relative max-w-[800px] px-4">
+        <div className="md:mb-10 mb-6">
+          <h3 className="md:text-3xl text-2xl text-center font-semibold md:mb-6 mb-4">
+            <span className="text-primary">Popular</span> Cars
+          </h3>
+          <p className="text-center  text-muted-foreground text-sm">
+            Explore our curated selection of top-quality vehicles. From sleek
+            sedans to rugged SUVs, find the perfect car to suit your needs and
+            drive away satisfied.
+          </p>
+        </div>
         <div className="border-2  hidden z-40 border-primary hover:border-secondary zen__transition__300 size-14 absolute top-1/2 left-0 md:flex items-center justify-center rounded-full cursor-pointer hover:bg-slate-500/10 ">
           <IoArrowBack />
         </div>

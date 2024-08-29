@@ -8,16 +8,15 @@ import { BsFillFuelPumpFill } from "react-icons/bs";
 import { FaArrowRight } from "react-icons/fa";
 import { GiCarWheel } from "react-icons/gi";
 import { TbManualGearboxFilled } from "react-icons/tb";
-import { TiStar } from "react-icons/ti";
 
 export const CarListSection = () => {
   return (
-    <section className="bg-gradient-to-r from-gray-200 to-gray-200 via-slate-100  py-20 ">
+    <section className="bg-gradient-to-r from-gray-200 to-gray-200 via-slate-100  lg:py-20 md:py-16 py-10">
       <div className="container mx-auto space-y-10">
-        <div className="lg:max-w-[80%] mx-auto flex flex-col justify-center items-center gap-6">
-          <h4 className="text-3xl text-center font-semibold">
+        <div className="lg:max-w-[60%]  mx-auto md:mb-10 mb-6">
+          <h3 className="md:text-3xl text-2xl text-center font-semibold md:mb-6 mb-4">
             <span className="text-primary">Cars</span> Collection
-          </h4>
+          </h3>
           <p className="text-center  text-muted-foreground text-sm">
             Explore our curated selection of top-quality vehicles. From sleek
             sedans to rugged SUVs, find the perfect car to suit your needs and
@@ -78,7 +77,7 @@ const Item = ({
   image,
 }: TItem) => {
   return (
-    <div className="hover:bg-white basis-1/3  bg-gray-50 delay-75 hover:shadow-lg group border-slate-100 hover:scale-110 zen__transition__300 cursor-pointer shadow-sm border rounded-sm p-8 space-y-6">
+    <div className="hover:bg-white basis-1/3 hover:scale-105  bg-gray-50 delay-75 hover:shadow-lg group border-slate-100 md:hover:scale-110 zen__transition__300 cursor-pointer shadow-sm border rounded-sm p-8 space-y-6">
       <div className="font-semibold  font-makro">
         AED 375 <span className="text-gray-400 text-sm font-light">/ day</span>
       </div>

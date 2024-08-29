@@ -12,10 +12,10 @@ import { settings } from "./settings";
 
 export const CarTypesSection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="lg:py-20 md:py-16 py-10 bg-background">
       <div className="container">
-        <div className="max-w-[750px] mx-auto mb-10">
-          <h3 className="text-3xl text-center font-semibold mb-6">
+        <div className="max-w-[750px] mx-auto md:mb-10 mb-6">
+          <h3 className="md:text-3xl text-2xl text-center font-semibold md:mb-6 mb-4">
             <span className="text-primary">Car</span> Types
           </h3>
           <p className="text-center  text-muted-foreground text-sm">

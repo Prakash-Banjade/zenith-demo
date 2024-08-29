@@ -7,10 +7,10 @@ export const ServicesSection = () => {
   return (
     <section className="bg-white lg:py-20 py-10">
       <div className="container mx-auto space-y-10">
-        <div className="lg:max-w-[50%] mx-auto flex flex-col justify-center items-center gap-6">
-          <h4 className="text-3xl text-center font-semibold">
+        <div className="lg:max-w-[50%] mx-auto  md:mb-10 mb-6">
+          <h3 className="md:text-3xl text-2xl text-center font-semibold md:mb-6 mb-4">
             <span className="text-primary">Our</span> Services
-          </h4>
+          </h3>
           <p className="text-center  text-muted-foreground text-sm">
             Elevate your Dubai experience with luxury cars, helicopters, and
             yachts. Seamless bookings and top-notch service for unforgettable

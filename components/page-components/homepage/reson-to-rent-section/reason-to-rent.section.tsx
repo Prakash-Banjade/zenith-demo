@@ -15,12 +15,12 @@ export const ReasonToRentSection = () => {
       <div className="absolute w-full h-full inset-0 bg-black/70" />
 
       <div className="container mx-auto relative space-y-14">
-        <h3 className="text-white xl:text-4xl text-3xl font-semibold tracking-wide">
+        <h3 className="text-white xl:text-4xl md:text-3xl text-2xl font-semibold tracking-wide">
           <span>Reason to rent car in</span>
           <br />
           <span className="relative">
             <span>our company</span>
-            <span className="w-full block absolute -bottom-4 bg-secondary h-1.5 rounded"></span>
+            <span className="w-full block absolute -bottom-4 bg-secondary md:h-1.5 h-1 rounded"></span>
           </span>
         </h3>
 

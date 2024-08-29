@@ -5,12 +5,12 @@ import Link from "next/link";
 
 export const RentalLocationsSection = () => {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white lg:py-32 md:py-24 py-16">
       <div className="container mx-auto space-y-10">
-        <div className="lg:max-w-[50%] mx-auto flex flex-col justify-center items-center gap-6">
-          <h4 className="text-3xl text-center font-semibold">
+        <div className="lg:max-w-[50%] mx-auto  md:mb-10 mb-6">
+          <h3 className="md:text-3xl text-2xl text-center font-semibold md:mb-6 mb-4">
             <span className="text-primary">Rental</span> Locations
-          </h4>
+          </h3>
           <p className="text-center  text-muted-foreground text-sm">
             We offer a wide range of rental locations across Dubai. From luxury
             villas to budget-friendly homes, our selection caters to every
