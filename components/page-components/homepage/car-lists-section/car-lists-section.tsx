@@ -15,9 +15,7 @@ export const CarListSection = () => {
     <section className="bg-gradient-to-r from-gray-200 to-gray-200 via-slate-100  py-20 ">
       <div className="max-w-[1020px] mx-auto space-y-10">
         <div className="max-w-[80%] mx-auto flex flex-col justify-center items-center gap-6">
-          <h4 className="text-3xl text-center text-primary font-semibold">
-            Also Check
-          </h4>
+          <h4 className="text-3xl text-center font-semibold">Also Check</h4>
           <p className="text-center  text-gray-800 text-sm">
             Explore our curated selection of top-quality vehicles. From sleek
             sedans to rugged SUVs, find the perfect car to suit your needs and

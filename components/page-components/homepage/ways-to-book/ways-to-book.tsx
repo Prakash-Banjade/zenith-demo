@@ -4,7 +4,7 @@ import { waysToBook } from "./data";
 
 export const WaysToBook = () => {
   return (
-    <section className="bg-black py-10">
+    <section className="bg-gradient-to-r from-gray-800 to-gray-950 py-10">
       <div className="container grid grid-cols-3 gap-x-10 gap-y-4">
         {waysToBook.map((item, index) => (
           <Item key={index} {...item} />

@@ -13,7 +13,7 @@ export const HomeHeroSection = () => {
         objectFit="cover"
         className="absolute inset-0 w-full h-full object-cover "
       />
-      <div className="absolute bg-black inset-0 w-full h-full opacity-40"></div>
+      <div className="absolute bg-black inset-0 w-full h-full opacity-50"></div>
       <div className="w-full h-full flex items-center justify-center  text-white relative z-50">
         <div className="container mx-auto space-y-14">
           <div className="h-fit text-7xl font-semibold">

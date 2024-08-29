@@ -1,3 +1,4 @@
+import { RentalLocationsSection } from "@/components/common/rental-locations/rental-locations-sections";
 import { CarListSection } from "@/components/page-components/homepage/car-lists-section/car-lists-section";
 import { HomeHeroSection } from "@/components/page-components/homepage/home-hero/home-hero-section";
 import { PopularCars } from "@/components/page-components/homepage/popular-cars/popular-cars";
@@ -22,6 +23,7 @@ export default function HomePage() {
       {/* Reason To Rent In Our Company */}
       <ReasonToRentSection />
       {/* Rent Location */}
+      <RentalLocationsSection />
     </main>
   );
 }
