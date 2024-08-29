@@ -6,14 +6,14 @@ export const waysToBook = [
   {
     title: "Choose your pickup location",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore excepturi.",
+      "Select the most convenient location for picking up your car to start your journey effortlessly.",
     icon: FaMapMarkerAlt,
   },
 
   {
     title: "Select offer the best for you",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore excepturi.",
+      "Browse through our exclusive deals and choose the one that suits your needs and budget.",
 
     icon: IoDiamondSharp,
   },
@@ -21,7 +21,7 @@ export const waysToBook = [
   {
     title: "Booking your car and be calmly",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore excepturi.",
+      "Secure your reservation with ease and get ready to enjoy a smooth and relaxing experience.",
     icon: PiSteeringWheelFill,
   },
 ];

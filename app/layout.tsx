@@ -3,6 +3,7 @@ import "./globals.css";
 import { DesktopHeader } from "@/components/navigation/header/desktop/desktop-header";
 import { Footer } from "@/components/navigation/footer/footer";
 import { makro, rubik } from "@/lib/fonts";
+import { ScrollContextProvider } from "@/components/context/scroll-context";
 
 export const metadata: Metadata = {
   title: {
@@ -18,18 +19,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`antialiased ${rubik.variable} ${makro.variable}`}
-    >
-      <body>
-        {/* header */}
+    <ScrollContextProvider>
+      <html
+        lang="en"
+        className={`antialiased ${rubik.variable} ${makro.variable}`}
+      >
+        <body>
+          {/* header */}
 
-        <DesktopHeader />
+          <DesktopHeader />
 
-        {children}
-        <Footer />
-      </body>
-    </html>
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </ScrollContextProvider>
   );
 }

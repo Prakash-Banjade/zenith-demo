@@ -21,6 +21,7 @@ export default function HomePage() {
       <CarListSection />
       {/* Reason To Rent In Our Company */}
       <ReasonToRentSection />
+      {/* Rent Location */}
     </main>
   );
 }

@@ -22,12 +22,12 @@ export const HomeHeroSection = () => {
               to
               <div className="relative">
                 <span> rent a car</span>
-                <div className="w-full absolute -bottom-1 bg-primary h-1.5 rounded"></div>
+                <div className="w-full absolute -bottom-2 bg-primary h-1.5 rounded"></div>
               </div>
             </div>
           </div>
 
-          <p className="max-w-[40vw] text-lg font-medium  shadow-primary">
+          <p className="xl:max-w-[40vw] text-lg  shadow-primary">
             Discover the easiest way to rent a car in Dubai with these quick
             tips. Streamline your experience, enjoy fast service, and get on the
             road effortlessly.

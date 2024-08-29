@@ -64,6 +64,16 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-all duration-200 ease-linear;
+  }
+}
+
+@layer utilities {
+  .zen__transition__300 {
+    @apply transition-all duration-300 ease-linear;
+  }
+
+  .zen__transition__200 {
+    @apply transition-all duration-200 ease-linear;
   }
 }
