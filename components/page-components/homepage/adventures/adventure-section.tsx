@@ -23,7 +23,10 @@ export const AdventureSection = () => {
 
         <div className="flex gap-6">
           {adventureLists.map((item) => (
-            <div className=" bg-white rounded-3xl relative h-[320px] basis-1/4 overflow-hidden group">
+            <div
+              key={item.title}
+              className=" bg-white rounded-3xl relative h-[320px] basis-1/4 overflow-hidden group"
+            >
               <Image
                 src={item.image}
                 alt="Single Car"
