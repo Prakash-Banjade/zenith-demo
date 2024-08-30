@@ -14,15 +14,15 @@ export const CarTypesSection = () => {
   return (
     <section className="lg:py-20 md:py-16 py-10 bg-background">
       <div className="container">
-        <div className="max-w-[750px] mx-auto md:mb-10 mb-6">
-          <h3 className="md:text-3xl text-2xl text-center font-semibold md:mb-6 mb-4">
+        {/* <div className="max-w-[750px] mx-auto md:mb-10 mb-6">
+          <h3 className="section-title">
             <span className="text-primary">Car</span> Types
           </h3>
           <p className="text-center  text-muted-foreground text-sm">
             Choose from a wide range of car types, from sleek sports cars to
             rugged SUVs, tailored to fit every journey and occasion.
           </p>
-        </div>
+        </div> */}
 
         <div className="slider-container w-full">
           <Slider {...settings}>
@@ -46,12 +46,12 @@ const Item = ({ item }: { item: TItem }) => {
   return (
     <div className="pr-2">
       <div className="bg-white border p-8 cursor-pointer rounded-3xl group flex-col flex gap-4 w-full  hover:drop-shadow-sm hover:shadow-sm shadow-primary hover:bg-slate-50 zen__transition__300">
-        <div className="rounded-3xl border p-4 bg-slate-100 size-20 flex items-center justify-center">
+        <div className="!min-h-[50px] flex items-center">
           <Image
             src={item.icon}
             alt="Single Car"
-            height={50}
-            width={50}
+            height={100}
+            width={100}
             className="text-black"
           />
         </div>
@@ -66,7 +66,7 @@ const Item = ({ item }: { item: TItem }) => {
               className="invisible flex group absolute opacity-0 group-hover:opacity-100  translate-y-6 group-hover:translate-y-0 group-hover:visible text-primary font-medium zen__transition__300"
             >
               {" "}
-              View More{" "}
+              Rent now{" "}
               <IoIosArrowRoundForward className="text-primary w-0 h-6 group-hover:w-6 zen__transition__300" />
             </Link>
           </p>

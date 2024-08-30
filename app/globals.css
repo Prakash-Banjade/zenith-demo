@@ -69,6 +69,10 @@
 }
 
 @layer utilities {
+  .section-title {
+    @apply md:text-4xl sm:text-3xl text-2xl md:font-bold text-center font-semibold md:mb-6 mb-4;
+  }
+  
   .zen__transition__300 {
     @apply transition-all duration-300 ease-linear;
   }

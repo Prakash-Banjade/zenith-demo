@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { TooltipWrapper } from "@/components/ui/tooltip";
 import { carLists } from "@/data/car-lists";
+import { CheckIcon } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -47,7 +49,7 @@ export const CarListSection = () => {
             variant={"ghost"}
             className="bg-white  transition-all duration-300 ease-linear rounded-none text-gray-800 shadow-sm drop-shadow-lg hover:bg-primary hover:text-white"
           >
-            Show all cars
+            View all
           </Button>
         </div>
       </div>
@@ -78,20 +80,22 @@ const Item = ({
 }: TItem) => {
   return (
     <div className="hover:bg-white basis-1/3 hover:scale-105  bg-gray-50 delay-75 hover:shadow-lg group border-slate-100 md:hover:scale-110 zen__transition__300 cursor-pointer shadow-sm border rounded-sm p-8 space-y-6">
-      <div className="font-semibold  font-makro">
-        AED 375 <span className="text-gray-400 text-sm font-light">/ day</span>
+      <div className="font-makro flex justify-between items-center">
+        <span className="font-semibold">AED 375 <span className="text-gray-400 text-sm font-light">/ day</span></span>
+        <span className="text-sm text-gray-800">250 KM</span>
       </div>
       <div>
         <Image src={image} alt="Single Car" height={600} width={1000} />
       </div>
+      <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
       <div className="grid grid-cols-2 gap-4 mb-6">
         <div className="flex gap-3">
           <AiOutlineDashboard className="text-primary" />
-          <span className="font-medium text-gray-400 text-sm">220km/h</span>
+          <span className="font-medium text-gray-400 text-sm">{acceleration}</span>
         </div>
         <div className="flex gap-3">
           <GiCarWheel className="text-primary" />
-          <span className="font-medium text-gray-400 text-sm">105km 77kw</span>
+          <span className="font-medium text-gray-400 text-sm">{power}</span>
         </div>{" "}
         <div className="flex gap-3">
           <TbManualGearboxFilled className="text-primary" />
@@ -102,7 +106,21 @@ const Item = ({
           <span className="font-medium text-gray-400 text-sm">{fuelType}</span>
         </div>
       </div>
-      <div className="w-fit delay-150 text-sm  text-primary group-hover:bg-primary group-hover:text-white zen__transition__300">
+
+      <ul className="flex flex-col gap-1 text-sm">
+        <TooltipWrapper label="No Deposit">
+          <li className="flex gap-1 items-center text-gray-800 hover:underline w-fit">
+            <CheckIcon size={16} /> No Deposit
+          </li>
+        </TooltipWrapper>
+        <TooltipWrapper label={`Full insurance included when you rent ${title}`}>
+          <li className="flex gap-1 items-center text-gray-800 hover:underline w-fit">
+            <CheckIcon size={16} /> Insurance Included
+          </li>
+        </TooltipWrapper>
+      </ul>
+
+      {/* <div className="w-fit delay-150 text-sm  text-primary group-hover:bg-primary group-hover:text-white zen__transition__300">
         <Link
           href={path}
           className="font-medium flex  gap-2 items-center px-4 py-2"
@@ -110,7 +128,7 @@ const Item = ({
           <span>Rent a car</span>
           <FaArrowRight />
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
