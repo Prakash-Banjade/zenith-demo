@@ -59,7 +59,7 @@ export const DesktopNavbar = () => {
         <li>
           <TooltipWrapper label="Search">
             <button className={cn(
-              "h-12 w-12 text-white border border-white rounded-full grid place-items-center hover:border-secondary hover:text-secondary transition-all",
+              "h-12 !w-12 text-white border border-white rounded-full grid place-items-center hover:border-secondary hover:text-secondary transition-all",
               hasScrolled && "text-gray-600 border-gray-600"
             )}>
               <SearchIcon size={24} />
