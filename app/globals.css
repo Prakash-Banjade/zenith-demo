@@ -63,6 +63,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground transition-all duration-200 ease-linear;
   }
@@ -72,7 +73,7 @@
   .section-title {
     @apply md:text-4xl sm:text-3xl text-2xl md:font-bold text-center font-semibold md:mb-6 mb-4;
   }
-  
+
   .zen__transition__300 {
     @apply transition-all duration-300 ease-linear;
   }
@@ -92,6 +93,10 @@
   .slick-slider {
     margin-inline: -30px;
   }
+}
+
+.hero-title {
+  font-size: clamp(1.875rem, 2.5vw + 1rem, 3.5rem);
 }
 
 /* .slick-initialized .slick-slide {
