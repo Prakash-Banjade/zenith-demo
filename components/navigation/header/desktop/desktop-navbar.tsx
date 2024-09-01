@@ -27,7 +27,7 @@ export const DesktopNavbar = () => {
                 className={cn(
                   "font-medium underline-link text-xl text-white hover:text-secondary zen__transition__300 flex items-center gap-1",
                   hasScrolled && "text-gray-600",
-                  item.name === 'Home' && hasScrolled && 'text-secondary'
+                  item.name === 'Home' && 'text-secondary'
                 )}
               >
                 <item.icon size={20} />

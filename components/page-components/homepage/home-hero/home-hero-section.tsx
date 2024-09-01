@@ -10,6 +10,7 @@ export const HomeHeroSection = () => {
         src={HomeBannerImage}
         alt="Home Banner"
         layout="fill"
+        priority
         objectFit="cover"
         className="absolute inset-0 w-full h-full object-cover "
       />

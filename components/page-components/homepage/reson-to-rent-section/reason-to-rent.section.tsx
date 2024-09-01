@@ -16,10 +16,10 @@ export const ReasonToRentSection = () => {
 
       <div className="container mx-auto relative space-y-14">
         <h3 className="text-white xl:text-4xl md:text-3xl text-2xl font-semibold tracking-wide">
-          <span>Reason to rent car in</span>
+          <span>Reason to rent car with</span>
           <br />
           <span className="relative">
-            <span>our company</span>
+            <span>Zenith Super Car Rental</span>
             <span className="w-full block absolute -bottom-4 bg-secondary md:h-1.5 h-1 rounded"></span>
           </span>
         </h3>
