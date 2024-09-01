@@ -75,6 +75,7 @@ export const PopularCars = () => {
                     alt={item.title}
                     height={600}
                     width={1000}
+                    priority
                     className="left-0 right-0 object-fit max-h-[250px] w-auto block mx-auto"
                   />
                 </div>
@@ -119,7 +120,7 @@ export const PopularCars = () => {
           <div className="flex justify-between items-center">
             <div>
               <div className="font-bold text-lg font-makro">
-                AED {currentCar.price}
+                AED {currentCar.price.toLocaleString()}
               </div>
               <span className="text-gray-400 text-sm text-right">
                 per day

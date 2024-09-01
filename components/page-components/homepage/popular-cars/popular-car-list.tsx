@@ -1,8 +1,12 @@
+import porcheImg from '@/public/assets/models/porche-turbo-911.jpeg'
+import mclarenImg from '@/public/assets/models/mclaren-720-spider.png'
+import rangeRoverImg from '@/public/assets/models/range-rover-sport.png'
+
 export const popularCars = [
   {
     id: 1,
     title: "Porche Turbo 911",
-    image: "/assets/models/porche-turbo-911.jpeg",
+    image: porcheImg,
     power: "580hp",
     transmission: "automatic",
     seats: 4,
@@ -12,7 +16,7 @@ export const popularCars = [
   {
     id: 2,
     title: "McLaren 720s Spider",
-    image: "/assets/models/mclaren-720-spider.png",
+    image: mclarenImg,
     power: "420hp",
     transmission: "automatic",
     seats: 5,
@@ -22,7 +26,7 @@ export const popularCars = [
   {
     id: 3,
     title: "Range Rover Sport",
-    image: "/assets/models/range-rover-sport.png",
+    image: rangeRoverImg,
     power: "380hp",
     transmission: "automatic",
     seats: 5,
