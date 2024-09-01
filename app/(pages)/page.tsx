@@ -5,10 +5,12 @@ import { AdventureSection } from "@/components/page-components/homepage/adventur
 import { BrandsSection } from "@/components/page-components/homepage/brands-section/brands-section";
 import { CarListSection } from "@/components/page-components/homepage/car-lists-section/car-lists-section";
 import { CarTypesSection } from "@/components/page-components/homepage/car-types-section/car-types-section";
+import FAQSection from "@/components/page-components/homepage/faq-section/faq-container";
 import { HomeHeroSection } from "@/components/page-components/homepage/home-hero/home-hero-section";
 import { PopularCars } from "@/components/page-components/homepage/popular-cars/popular-cars";
 import RequiredDocumentsSection from "@/components/page-components/homepage/required-documents-section";
 import { ReasonToRentSection } from "@/components/page-components/homepage/reson-to-rent-section/reason-to-rent.section";
+import StatisticsSection from "@/components/page-components/homepage/statistics-section/statistics-wrapper";
 import { WaysToBook } from "@/components/page-components/homepage/ways-to-book/ways-to-book";
 import { allCarsList, luxuryCars, sportCars, suvCarList } from "@/data/car-lists";
 import { QuoteIcon } from "lucide-react";
@@ -28,6 +30,7 @@ export default function HomePage() {
         <HomeHeroSection />
         <CarTypesSection />
         <BrandsSection />
+        <StatisticsSection />
       </main>
 
       <section className="mb-10 container flex flex-col items-center gap-5">
@@ -93,6 +96,8 @@ export default function HomePage() {
       <RentalLocationsSection />
 
       <RequiredDocumentsSection />
+
+      <FAQSection />
     </>
   );
 }

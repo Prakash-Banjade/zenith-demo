@@ -3,7 +3,7 @@ import { useScroll } from "@/components/context/scroll-context";
 import { Button } from "@/components/ui/button";
 import { navData } from "@/data/nav-data";
 import { cn } from "@/lib/utils";
-import { MoveRightIcon } from "lucide-react";
+import { MoveRightIcon, SearchIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import {
@@ -11,6 +11,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
+import { TooltipWrapper } from "@/components/ui/tooltip";
 
 
 export const DesktopNavbar = () => {
@@ -54,6 +55,17 @@ export const DesktopNavbar = () => {
             }
           </li>
         ))}
+
+        <li>
+          <TooltipWrapper label="Search">
+            <button className={cn(
+              "h-12 w-12 text-white border border-white rounded-full grid place-items-center hover:border-secondary hover:text-secondary transition-all",
+              hasScrolled && "text-gray-600 border-gray-600"
+            )}>
+              <SearchIcon size={24} />
+            </button>
+          </TooltipWrapper>
+        </li>
 
         <Button
           className="group px-5 md:w-fit w-full text-base rounded-none py-6 bg-primary text-white hover:bg-secondary transition-all duration-200 ease-in items-center gap-2"
