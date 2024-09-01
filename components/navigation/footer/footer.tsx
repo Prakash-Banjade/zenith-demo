@@ -9,15 +9,21 @@ export const Footer = () => {
     <footer className="bg-slate-50">
       <div className="container">
         <div className="flex flex-wrap justify-between items-center py-10 gap-4">
-          <Link href="/">
-            <Image
-              src={BlueLogo}
-              alt="logo"
-              width={400}
-              height={200}
-              className="h-12 w-auto"
-            />
-          </Link>
+          <section>
+            <Link href="/">
+              <Image
+                src={BlueLogo}
+                alt="logo"
+                width={400}
+                height={200}
+                className="h-12 w-auto"
+              />
+            </Link>
+            <p className="text-sm text-gray-500 mt-4 max-w-[60ch]">
+              Zenith is one of Known Car Rental Company in dubai.
+              We are Dealing with Luxury Cars, Sports Cars, SUV Cars and Economy Cars for Rent in Dubai. We are also provide chauffeur service.
+            </p>
+          </section>
 
           <div className="flex justify-between text-muted-foreground text-sm gap-6">
             <div className="flex flex-col gap-1">
@@ -37,6 +43,7 @@ export const Footer = () => {
             </Button>
           </div>
         </div>
+
         <div className="flex justify-between items-center md:flex-row flex-col w-full py-5 border-t">
           <p className="text-sm text-muted-foreground ">
             Copyright &copy; {currentYear} Zenith - All rights reserved

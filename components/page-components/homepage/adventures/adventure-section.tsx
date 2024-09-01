@@ -10,8 +10,8 @@ export const AdventureSection = () => {
     <section className="bg-[#F7F7F7]  lg:py-20 md:py-16 py-10">
       <div className="container mx-auto space-y-10">
         <div className="lg:max-w-[60%] mx-auto md:mb-10 mb-6">
-          <h3 className="md:text-3xl text-2xl text-center font-semibold md:mb-6 mb-4">
-            <span className="text-primary">Adventures</span> In Dubai
+          <h3 className="section-title">
+            <span className="text-primary">Barry's Adventures Activities</span> In Dubai
           </h3>
           <p className="text-center  text-muted-foreground text-sm">
             Embrace the Excitement with Thrilling Desert Safaris, High-Speed Jet

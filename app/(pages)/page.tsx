@@ -1,11 +1,13 @@
 import { ServicesSection } from "@/components/common/our-services/services-sections";
 import { RentalLocationsSection } from "@/components/common/rental-locations/rental-locations-sections";
+import AdventureSummarySection from "@/components/page-components/homepage/adventure-summary/adventure-summary-section";
 import { AdventureSection } from "@/components/page-components/homepage/adventures/adventure-section";
 import { BrandsSection } from "@/components/page-components/homepage/brands-section/brands-section";
 import { CarListSection } from "@/components/page-components/homepage/car-lists-section/car-lists-section";
 import { CarTypesSection } from "@/components/page-components/homepage/car-types-section/car-types-section";
 import { HomeHeroSection } from "@/components/page-components/homepage/home-hero/home-hero-section";
 import { PopularCars } from "@/components/page-components/homepage/popular-cars/popular-cars";
+import RequiredDocumentsSection from "@/components/page-components/homepage/required-documents-section";
 import { ReasonToRentSection } from "@/components/page-components/homepage/reson-to-rent-section/reason-to-rent.section";
 import { WaysToBook } from "@/components/page-components/homepage/ways-to-book/ways-to-book";
 import { allCarsList, luxuryCars, sportCars, suvCarList } from "@/data/car-lists";
@@ -19,12 +21,14 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <main>
-      {/* Hero Section */}
-      {/* Hero Section */}
-      <HomeHeroSection />
-      <CarTypesSection />
-      <BrandsSection />
+    <>
+      <main>
+        {/* Hero Section */}
+        {/* Hero Section */}
+        <HomeHeroSection />
+        <CarTypesSection />
+        <BrandsSection />
+      </main>
 
       <section className="mb-10 container flex flex-col items-center gap-5">
         <QuoteIcon size={40} />
@@ -34,6 +38,8 @@ export default function HomePage() {
           When it comes to finding a rental car nearby, Zenith Super Car Rental is your top choice. With convenient locations, a diverse fleet, competitive prices, and outstanding customer service, we're dedicated to making your travel experience smooth and enjoyable.
         </p>
       </section>
+
+      <AdventureSummarySection />
 
       <WaysToBook />
       <PopularCars />
@@ -53,7 +59,7 @@ export default function HomePage() {
           </>
         }
       />
-      
+
       <CarListSection
         carsList={luxuryCars}
         title={<><span className="text-primary">Luxury Cars</span> for Rent</>}
@@ -85,6 +91,8 @@ export default function HomePage() {
       <ReasonToRentSection />
       {/* Rent Location */}
       <RentalLocationsSection />
-    </main>
+
+      <RequiredDocumentsSection />
+    </>
   );
 }

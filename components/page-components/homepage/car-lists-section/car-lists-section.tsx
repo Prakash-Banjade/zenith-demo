@@ -2,12 +2,9 @@ import { Button } from "@/components/ui/button";
 import { TooltipWrapper } from "@/components/ui/tooltip";
 import { CarList } from "@/data/car-lists";
 import { CheckIcon, MessageCircleIcon, PhoneIcon } from "lucide-react";
-import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
+import Image from "next/image";
 import React from "react";
-import { AiOutlineDashboard } from "react-icons/ai";
 import { BsFillFuelPumpFill } from "react-icons/bs";
-import { FaArrowRight } from "react-icons/fa";
 import { GiCarWheel } from "react-icons/gi";
 import { TbManualGearboxFilled } from "react-icons/tb";
 
@@ -50,9 +47,9 @@ export const CarListSection = ({ carsList, title, subTitle }: { carsList: CarLis
           </Button>
         </div>
       </div>
-      <p className="text-center text-muted-foreground text-sm mt-5">
-        {subTitle || "Explore our cars collection"}
-      </p>
+      {subTitle && <p className="text-center text-muted-foreground text-sm mt-5">
+        {subTitle}
+      </p>}
     </section>
   );
 };
@@ -62,7 +59,7 @@ type TItem = {
   acceleration: string;
   fuelType: string;
   power: string;
-  price: string;
+  price: number;
   rating: number;
   path: string;
   image: string;
@@ -81,11 +78,11 @@ const Item = ({
   return (
     <div className="hover:bg-white basis-1/3 bg-gray-50 delay-75 hover:shadow-lg group border-slate-100 zen__transition__300 shadow-sm border border-border rounded-md p-4 space-y-6">
       <div className="font-makro flex justify-between items-center">
-        <span className="font-semibold">AED 375 <span className="text-gray-400 text-sm font-light">/ day</span></span>
+        <span className="font-semibold">AED {price.toLocaleString()} <span className="text-gray-400 text-sm font-light">/ day</span></span>
         <span className="text-sm text-gray-800">250 KM</span>
       </div>
       <div className="h-[120px] !w-full relative">
-        <Image src={image} alt={title} fill objectFit="cover" />
+        <Image src={image} alt={title} fill objectFit="contain" className="scale-110" />
       </div>
       <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
       <div className="grid grid-cols-2 gap-4 mb-6">
