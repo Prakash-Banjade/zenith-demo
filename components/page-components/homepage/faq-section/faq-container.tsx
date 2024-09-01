@@ -38,19 +38,19 @@ export default function FAQSection() {
         <section className="bg-[url('/assets/banners/banner-2.jpg')] bg-cover bg-center relative mb-20">
             <div className='w-full h-full inset-0 bg-black/80 absolute'></div>
 
-            <section className="container text-white p-8 py-16 relative z-20">
+            <section className="container text-white sm:py-16 py-12 relative z-20">
                 <div className="text-center pt-0 pb-8">
                     <h2 className="text-4xl font-bold mb-2">Frequently Asked Questions</h2>
                     <p className="text-lg">Looking to Save More on Your rental car?</p>
                 </div>
                 <div className="space-y-6">
-                    <div className="flex justify-center space-x-2 mb-6">
+                    <div className="flex justify-center gap-2 mb-6 flex-wrap">
                         {tabs.map((tab) => (
                             <Button
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
                                 className={cn(
-                                    `rounded-full px-8 py-6 text-white bg-transparent border-2 border-secondary`,
+                                    `rounded-full sm:px-8 sm:py-6 text-white bg-transparent border-2 border-secondary grow sm:grow-0`,
                                     activeTab === tab && 'bg-secondary hover:bg-secondary',
                                 )}
                             >
@@ -58,7 +58,7 @@ export default function FAQSection() {
                             </Button>
                         ))}
                     </div>
-                    <Accordion type="single" collapsible className="w-full">
+                    <Accordion type="single" collapsible className="sm:w-3/4 mx-auto">
                         {faqs.map((faq, index) => (
                             <AccordionItem key={index} value={`item-${index}`} className="border-b border-white/20">
                                 <AccordionTrigger className="text-left hover:no-underline">

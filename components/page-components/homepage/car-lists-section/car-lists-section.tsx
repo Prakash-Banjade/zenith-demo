@@ -47,7 +47,7 @@ export const CarListSection = ({ carsList, title, subTitle }: { carsList: CarLis
           </Button>
         </div>
       </div>
-      {subTitle && <p className="text-center text-muted-foreground text-sm mt-5">
+      {subTitle && <p className="container text-center text-muted-foreground text-sm mt-5">
         {subTitle}
       </p>}
     </section>
