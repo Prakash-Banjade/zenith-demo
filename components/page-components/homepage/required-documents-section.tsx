@@ -41,7 +41,7 @@ export default function RequiredDocumentsSection({ }: Props) {
                 <header>
                     <h2 className='section-title !text-left'><span className='text-primary'>Required Documents</span> For your Car Rental</h2>
                     <p className='text-muted-foreground'>
-                        If you're planning a vacation in the United Arab Emirates (UAE), it's important to note that the country's major attractions are spread out across various locations.
+                        If you&apos;re planning a vacation in the United Arab Emirates (UAE), it&apos;s important to note that the country&apos;s major attractions are spread out across various locations.
                         The most convenient way to explore these sites—from iconic shopping destinations like the Mall of the Emirates to renowned landmarks like the Sheikh Zayed Grand Mosque in Abu Dhabi,
                         and luxury hotels and resorts in Ras Al Khaimah—is by car. As long as you have the necessary valid documents, you can easily rent a car anywhere in the UAE.
                     </p>

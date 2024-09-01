@@ -34,8 +34,8 @@ export default function HomePage() {
         <QuoteIcon size={40} />
         <p className="text-gray-700 text-center">
           Searching for a <span className="font-bold text-gray-900">Rent A Car Near Me</span>? At <span className="font-bold text-gray-900">Zenith Super Car Rental Dubai</span>, we take pride in offering exceptional car rental services conveniently located near you.
-          Whether you're traveling for business or leisure, having a dependable rental car can elevate your experience, giving you the freedom to explore at your own pace.
-          When it comes to finding a rental car nearby, Zenith Super Car Rental is your top choice. With convenient locations, a diverse fleet, competitive prices, and outstanding customer service, we're dedicated to making your travel experience smooth and enjoyable.
+          Whether you&apos;re traveling for business or leisure, having a dependable rental car can elevate your experience, giving you the freedom to explore at your own pace.
+          When it comes to finding a rental car nearby, Zenith Super Car Rental is your top choice. With convenient locations, a diverse fleet, competitive prices, and outstanding customer service, we&apos;re dedicated to making your travel experience smooth and enjoyable.
         </p>
       </section>
 
@@ -55,7 +55,7 @@ export default function HomePage() {
           <>
             At Zenith, we offer an unparalleled selection of world-class sports cars, blending luxury with high-octane performance.
             <br />
-            Whether you're cruising through Dubai&apos;s vibrant streets or embarking on a desert adventure, our fleet ensures an unforgettable driving experience that matches the city's opulence and dynamism.
+            Whether you&apos;re cruising through Dubai&apos;s vibrant streets or embarking on a desert adventure, our fleet ensures an unforgettable driving experience that matches the city&apos;s opulence and dynamism.
           </>
         }
       />
@@ -77,7 +77,7 @@ export default function HomePage() {
         title={<><span className="text-primary">SUV Cars</span> for Rent</>}
         subTitle={
           <>
-            Experience the perfect blend of luxury and power with our top-tier SUV rentals. Whether you're navigating the urban streets of Dubai or exploring the rugged terrains of the UAE,
+            Experience the perfect blend of luxury and power with our top-tier SUV rentals. Whether you&apos;re navigating the urban streets of Dubai or exploring the rugged terrains of the UAE,
             <br />
             our premium SUV fleet offers unmatched comfort, space, and performance. Drive with confidence and style in the ultimate vehicles designed to elevate your journey.
           </>

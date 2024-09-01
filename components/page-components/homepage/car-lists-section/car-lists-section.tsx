@@ -87,7 +87,7 @@ const Item = ({
       <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
       <div className="grid grid-cols-2 gap-4 mb-6">
         <div className="flex gap-3">
-          <img src="/seat.svg" alt="car-wheel" className="w-4 h-4" />
+          <Image src="/seat.svg" alt="car-wheel" width={20} height={20} className="w-4 h-4" />
           <span className="font-medium text-gray-400 text-sm">4 Seater</span>
         </div>
         <div className="flex gap-3">

@@ -13,7 +13,7 @@ export const BrandsSection = () => {
       <div className="container">
         <header className="flex flex-col gap-2 md:mb-10 mb-6">
           <h3 className="section-title !text-left">
-            <span className="text-primary">Experience Luxury</span> on Dubai's Roads
+            <span className="text-primary">Experience Luxury</span> on Dubai&apos;s Roads
           </h3>
           <p className="text-muted-foreground text-sm max-w-[100ch]">
             Choose from our premium selection of world-class brands, perfectly suited for the streets of Dubai.

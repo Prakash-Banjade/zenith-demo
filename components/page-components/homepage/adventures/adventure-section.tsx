@@ -11,7 +11,7 @@ export const AdventureSection = () => {
       <div className="container mx-auto space-y-10">
         <div className="lg:max-w-[60%] mx-auto md:mb-10 mb-6">
           <h3 className="section-title">
-            <span className="text-primary">Barry's Adventures Activities</span> In Dubai
+            <span className="text-primary">Barry&apos;s Adventures Activities</span> In Dubai
           </h3>
           <p className="text-center  text-muted-foreground text-sm">
             Embrace the Excitement with Thrilling Desert Safaris, High-Speed Jet
