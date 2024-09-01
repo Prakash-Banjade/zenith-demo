@@ -29,9 +29,9 @@ TooltipContent.displayName = TooltipPrimitive.Content.displayName
 
 const TooltipWrapper = ({ children, label }: { children: React.ReactNode, label: string }) => {
   return (
-    <TooltipProvider delayDuration={200}>
+    <TooltipProvider delayDuration={200} disableHoverableContent>
       <Tooltip>
-        <TooltipTrigger className="w-fit">
+        <TooltipTrigger className="w-fit" asChild>
           {children}
         </TooltipTrigger>
         <TooltipContent className="bg-gray-800 text-white text-xs max-w-[30ch]">

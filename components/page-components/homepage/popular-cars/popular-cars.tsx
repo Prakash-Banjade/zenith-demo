@@ -1,6 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import React from "react";
+import React, { useRef, useState } from "react";
 import { AiOutlineDashboard } from "react-icons/ai";
 import { BsFillFuelPumpFill } from "react-icons/bs";
 import { FaArrowRight } from "react-icons/fa";
@@ -15,6 +15,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export const PopularCars = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const sliderRef = useRef<Slider>(null);
+
   var settings = {
     dots: true,
     infinite: true,
@@ -22,7 +25,16 @@ export const PopularCars = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
+    beforeChange: (oldIndex: number, newIndex: number) =>
+      setCurrentSlide(newIndex),
   };
+
+  const handleDotClick = (index: number) => {
+    if (sliderRef.current) {
+      sliderRef.current.slickGoTo(index);
+    }
+  };
+
   return (
     <section className="lg:py-20 md:py-16 py-10 bg-background overflow-hidden">
       <div className=" mx-auto relative max-w-[800px] px-4">
@@ -36,15 +48,24 @@ export const PopularCars = () => {
             drive away satisfied.
           </p>
         </div>
-        <div className="border-2  hidden z-40 border-primary hover:border-secondary zen__transition__300 size-14 absolute top-1/2 left-0 md:flex items-center justify-center rounded-full cursor-pointer hover:bg-slate-500/10 ">
+        <button
+          type="button"
+          className="border-2  hidden z-40 border-primary hover:border-secondary zen__transition__300 size-14 absolute top-1/2 left-0 md:flex items-center justify-center rounded-full cursor-pointer hover:bg-slate-500/10"
+          onClick={() => sliderRef.current?.slickPrev()}
+        >
           <IoArrowBack />
-        </div>
+        </button>
 
-        <div className="border-2 z-40 border-primary   hover:border-secondary  size-14 absolute top-1/2 right-0 md:flex hidden items-center justify-center rounded-full cursor-pointer hover:bg-slate-500/10 zen__transition__300">
+        <button
+          type="button"
+          className="border-2 z-40 border-primary hover:border-secondary size-14 absolute top-1/2 right-0 md:flex hidden items-center justify-center rounded-full cursor-pointer hover:bg-slate-500/10 zen__transition__300"
+          onClick={() => sliderRef.current?.slickNext()}
+        >
           <IoArrowForward />
-        </div>
-        <div className="slider-container relative ">
+        </button>
+        <div className="slider-container relative">
           <Slider
+            ref={sliderRef}
             {...settings}
             className="max-w-[560px] w-full relative mx-auto px-4"
           >

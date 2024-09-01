@@ -8,6 +8,7 @@ import { HomeHeroSection } from "@/components/page-components/homepage/home-hero
 import { PopularCars } from "@/components/page-components/homepage/popular-cars/popular-cars";
 import { ReasonToRentSection } from "@/components/page-components/homepage/reson-to-rent-section/reason-to-rent.section";
 import { WaysToBook } from "@/components/page-components/homepage/ways-to-book/ways-to-book";
+import { allCarsList, luxuryCars, sportCars, suvCarList } from "@/data/car-lists";
 import { QuoteIcon } from "lucide-react";
 import { Metadata } from "next";
 
@@ -36,7 +37,46 @@ export default function HomePage() {
 
       <WaysToBook />
       <PopularCars />
-      <CarListSection />
+      <CarListSection
+        carsList={allCarsList}
+      />
+
+      {/* sport cars */}
+      <CarListSection
+        carsList={sportCars}
+        title={<><span className="text-primary">Sport Cars</span> for Rent</>}
+        subTitle={
+          <>
+            At Zenith, we offer an unparalleled selection of world-class sports cars, blending luxury with high-octane performance.
+            <br />
+            Whether you're cruising through Dubai&apos;s vibrant streets or embarking on a desert adventure, our fleet ensures an unforgettable driving experience that matches the city's opulence and dynamism.
+          </>
+        }
+      />
+      
+      <CarListSection
+        carsList={luxuryCars}
+        title={<><span className="text-primary">Luxury Cars</span> for Rent</>}
+        subTitle={
+          <>
+            Elevate your journey with Zenith&apos;s exclusive collection of luxury cars. From the elegance of Rolls Royce to the sophistication of Bentley, our fleet embodies prestige and comfort.
+            <br />
+            Whether for a business engagement, a special occasion, or simply to indulge in the finer things, experience Dubai in the ultimate style and grace with Zenith.
+          </>
+        }
+      />
+
+      <CarListSection
+        carsList={suvCarList}
+        title={<><span className="text-primary">SUV Cars</span> for Rent</>}
+        subTitle={
+          <>
+            Experience the perfect blend of luxury and power with our top-tier SUV rentals. Whether you're navigating the urban streets of Dubai or exploring the rugged terrains of the UAE,
+            <br />
+            our premium SUV fleet offers unmatched comfort, space, and performance. Drive with confidence and style in the ultimate vehicles designed to elevate your journey.
+          </>
+        }
+      />
       {/* Reason To Rent In Our Company */}
       {/* Adventures */}
       <AdventureSection />
