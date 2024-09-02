@@ -51,7 +51,7 @@ export const HeroForm = () => {
 
       <Button
         size={"lg"}
-        className=" md:h-14 h-12 py-3 w-48 text-lg rounded-none  px-5 flex items-center sm:col-span-2 lg:col-span-1 col-span-4 justify-between hover:bg-secondary bg-primary transition-all duration-200 ease-in"
+        className="w-full md:h-14 h-12 py-3 text-lg rounded-none px-5 flex items-center sm:col-span-2 lg:col-span-1 col-span-4 justify-between hover:bg-secondary bg-primary transition-all duration-200 ease-in"
       >
         <span>Find a car</span>
         <FaCarAlt className="text-white" />
